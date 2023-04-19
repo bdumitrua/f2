@@ -22,10 +22,6 @@ const Speech = () => {
                         Вид
                     </label>
                     <input className={input} id="treeType" type="text" />
-                    {/* <label htmlFor="treeDiameter" className="text-xl">
-                        Диаметр
-                    </label>
-                    <input className={input} id="treeDiameter" type="text" /> */}
                     <label htmlFor="treeState" className="text-xl">
                         Состояние
                     </label>

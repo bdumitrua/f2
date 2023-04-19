@@ -29,7 +29,7 @@ const Header = () => {
                     isVisible ? "translate-x-0" : ""
                 }`}
             >
-                <ul className="flex w-full px-10 h-20 items-center justify-between bg-green">
+                <ul className="flex w-full px-10 h-20 items-center justify-between bg-black text-white">
                     <li>
                         <Link to="/">Главная</Link>
                     </li>
