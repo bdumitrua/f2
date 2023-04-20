@@ -8,7 +8,6 @@ module.exports = {
             colors: {
                 white: "#fff",
                 black: "#000",
-                green: "#0d0",
             },
             container: {
                 padding: "2rem",

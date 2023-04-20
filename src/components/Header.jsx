@@ -1,18 +1,19 @@
 import { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
-import { BsTree } from "react-icons/bs";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router-dom";
+import logo from "../logo.svg";
 
 const Header = () => {
     const [isVisible, setIsVisible] = useState(false);
 
     return (
-        <header className="w-full h-20 bg-green flex">
+        <header className="w-full h-20 bg-green-400 flex">
             <div className="content w-full m-auto px-10 flex items-center justify-between">
                 <div className="logo">
                     <Link to="/">
-                        <BsTree size={40} />
+                        {/* <BsTree size={40} /> */}
+                        <img src={logo} alt="" width={100} height={50} />
                     </Link>
                 </div>
                 <button
@@ -21,7 +22,7 @@ const Header = () => {
                     }}
                     className={`mobile-nav-button ${isVisible ? "hidden" : ""}`}
                 >
-                    <RxHamburgerMenu size={40} />
+                    <RxHamburgerMenu size={40} fill="white" />
                 </button>
             </div>
             <nav
